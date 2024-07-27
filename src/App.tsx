@@ -1,11 +1,11 @@
 import { Center, Container } from 'styled-system/jsx'
-import Combo from './examples/Combo'
+import Selecto from './examples/Selecto'
 
 export const App = () => {
   return (
     <Container py={{ base: '16', md: '24' }}>
       <Center>
-        <Combo/>
+        <Selecto/>
       </Center>
     </Container>
   )
