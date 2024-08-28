@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "prepare": "panda codegen",
-    "dev": "vite --port 3000",
+    "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
