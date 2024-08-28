@@ -1,11 +1,11 @@
-import { Center, Container } from 'styled-system/jsx'
-import Selecto from './examples/Selecto'
+import { Center, Container } from 'styled-system/jsx';
+import MyDrawer from './components/Drawer';
 
 export const App = () => {
   return (
     <Container py={{ base: '16', md: '24' }}>
       <Center>
-        <Selecto/>
+        <MyDrawer/>
       </Center>
     </Container>
   )
