@@ -26,10 +26,10 @@ export default function MySelect() {
             </Select.Trigger>
         </Select.Control>
         <Select.Positioner /* shadow='lg' */ /* overflow='auto' scrollbarWidth='none' borderRadius='2xl' */>
-            <Select.Content minW='270px'>
+            <Select.Content>
                 <Index each={items}>
                     {(item) => (
-                        <Select.Item item={item()} gap={4}>
+                        <Select.Item item={item()} gap={4} minH='8'>
                             <Select.ItemText>
                                 {item().label}
                             </Select.ItemText>
