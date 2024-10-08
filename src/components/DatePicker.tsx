@@ -1,5 +1,5 @@
 import { CalendarIcon, ChevronLeftIcon, ChevronRightIcon } from 'lucide-solid'
-import { For, createSignal } from 'solid-js'
+import { For } from 'solid-js'
 import { Button } from '~/components/ui/button'
 import { DatePicker } from '~/components/ui/date-picker'
 import { IconButton } from '~/components/ui/icon-button'
@@ -7,13 +7,8 @@ import { Input } from '~/components/ui/input'
 
 const Demo = () => {
 
-    const [ date, setDate ] = createSignal<string>(new Date().toISOString().split('T')[0]);
-
     return (
         <DatePicker.Root
-            value={[date()]}
-            onValueChange={(v) => setDate(v.valueAsString[0])}
-            /* positioning={{ sameWidth: true }} */
             startOfWeek={1}
         >
             <DatePicker.Label>Date Picker</DatePicker.Label>
